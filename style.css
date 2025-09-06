@@ -106,14 +106,14 @@
       font-weight: 100;
       justify-content: center;
     }
-    .hero p {
+    .hero p {  
       font-size: 0.9rem;
     }
   }
   
   .hero p {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .hero-image {
@@ -638,5 +638,6 @@
   background: #0056b3; /* darker blue */
   transform: translateY(-3px);
 }
+
 
 
