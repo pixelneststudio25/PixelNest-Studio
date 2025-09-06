@@ -110,6 +110,7 @@
     }
     .hero p {  
       font-size: 0.9rem;
+        margin-top: 70px;
     }
   }
   
@@ -640,6 +641,7 @@
   background: #0056b3; /* darker blue */
   transform: translateY(-3px);
 }
+
 
 
 
