@@ -61,7 +61,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 20px; 
     background: url("assets/raphael-ai\ \(1\).jpeg") no-repeat center center/cover;
     min-height: 100vh;
     color: white;
@@ -101,6 +101,7 @@
   @media (max-width: 480px) {
     .hero {
       padding: 30px 15px;
+        background: url("assets/raphael-ai\ \(1\).jpeg") no-repeat center center/cover;
 
     }
     .hero h1 {
@@ -641,6 +642,7 @@
   background: #0056b3; /* darker blue */
   transform: translateY(-3px);
 }
+
 
 
 
