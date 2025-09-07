@@ -56,16 +56,32 @@
   }
   
   /* Hero Section */
-  .hero {
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px; 
+    padding: 80px 20px;
     min-height: 100vh;
     color: white;
   }
-.video-background {
+
+  .hero-content {
+    max-width: 800px;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-family: 'Fraunces', sans-serif; /* Applies Fraunces only here */
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .video-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -96,10 +112,6 @@
   z-index: 2;
 }
 
-  .hero-content {
-    max-width: 800px;
-    z-index: 1;
-  }
   
   .hero h1 {
     font-family: 'Fraunces', sans-serif; /* Applies Fraunces only here */
@@ -671,6 +683,7 @@
   background: #0056b3; /* darker blue */
   transform: translateY(-3px);
 }
+
 
 
 
