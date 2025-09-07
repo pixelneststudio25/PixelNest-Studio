@@ -130,8 +130,6 @@
   @media (max-width: 480px) {
     .hero {
       padding: 30px 15px;
-      background: url(assets/raphael-ai\ \(2\).jpeg);
-
     }
     .hero h1 {
       font-size: 3rem;
@@ -671,5 +669,6 @@
   background: #0056b3; /* darker blue */
   transform: translateY(-3px);
 }
+
 
 
