@@ -144,7 +144,7 @@
   .hero p {
     font-size: 20px;
     margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 20px;
   }
 
   .hero-image {
@@ -669,6 +669,7 @@
   background: #0056b3; /* darker blue */
   transform: translateY(-3px);
 }
+
 
 
 
