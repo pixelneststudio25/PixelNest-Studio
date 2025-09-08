@@ -454,7 +454,7 @@
       position: absolute;
       top: 60px;
       right: 0;
-      width: 40%;
+      width: 100%;
       display: none;
       padding: 20px 0;
       text-align: center;
@@ -469,8 +469,8 @@
     }
 
     nav ul li a {
-      font-size: 1.2 rem;
-      padding: 10px;
+      font-size: 1.5 rem;
+      padding: 15px;
     }
   
     nav .menu-toggle {
