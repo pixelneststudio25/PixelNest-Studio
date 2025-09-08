@@ -82,19 +82,19 @@
   }
 
   .view-plans-btn {
-    background-color: #FFC107; /*Bright Amber */
-    color: #000; /* Dark text for contrast */
+    background: linear-gradient(135deg, #FFB300, #E6A500);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
     padding: 14px 28px;
-    font-size: 1.1rem;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
     transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(255, 193, 7, 0.8),
-                0 0 30px rgba(255, 193, 7, 0.6),
-                0 0 45px rgba(255, 193, 7, 0.4);
-    text-decoration: none; /* Removes underline */
-    display: inline-block; /* Ensures text-decoration works consistently */
+    box-shadow: 0 0 12px rgba(255, 179, 0, 0.6),
+                0 0 24px rgba(230, 165, 0, 0.4);
   }
 
   .view-plans-btn:hover {
