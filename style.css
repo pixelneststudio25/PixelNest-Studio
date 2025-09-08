@@ -478,32 +478,60 @@
   }
   
 
-  /* Responsive */
+  /* Hamburger button default */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1100;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #64ffda;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Transform hamburger into X when active */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Mobile menu styles */
   @media (max-width: 768px) {
     nav ul {
       flex-direction: column;
-      background: rgba(10, 25, 47, 0.9);
+      background: rgba(10, 25, 47, 0.95);
       position: absolute;
       top: 60px;
       right: 0;
       width: 100%;
-      display: none;
-      padding: 20px 0;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding: 0;
       text-align: center;
       justify-content: center;
       align-items: center;
       gap: 20px;
-      transition: right 0.4s ease-in-out; /* smooth slide */
+      transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
       z-index: 1000;
     }
 
-    /* Active state - menu slides in */
     nav ul.active {
-      right: 0;
-    }
-  
-    nav ul.active {
-      display: flex;
+      max-height: 500px;
+      opacity: 1;
+      padding: 20px 0;
     }
 
     nav ul li {
@@ -511,31 +539,15 @@
     }
 
     nav ul li a {
-      font-size: 1.5 rem;
+      font-size: 1.5rem;
       padding: 15px;
-    }
-  
-    nav .menu-toggle {
-      display: block;
-      cursor: pointer;
-      font-size: 25px;
-      color: #64ffda;
-      padding: 7px;
-    }
-
-   .nav-links {
-      opacity: 0;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
-    }
-
-   .nav-links.active {
-      opacity: 1;
-      max-height: 500px;
-    }
-
   }
+
+    .menu-toggle {
+      display: flex;
+    }
+  }
+  
   .plans-section {
     padding: 50px 50px;
     text-align: center;
