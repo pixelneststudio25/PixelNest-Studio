@@ -54,6 +54,38 @@
   nav ul li a:hover {
     color: #64ffda;
   }
+
+  /* Hamburger bars */
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    z-index: 1001;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: #333;
+    border-radius: 3px;
+    transition: 0.4s;
+  }
+
+  /* Animate to X when active */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
   
   /* Hero Section */
   .hero {
@@ -458,6 +490,17 @@
       display: none;
       padding: 20px 0;
       text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      transition: right 0.4s ease-in-out; /* smooth slide */
+      z-index: 1000;
+    }
+
+/* Active state - menu slides in */
+nav ul.active {
+  right: 0;
+}
     }
   
     nav ul.active {
