@@ -82,7 +82,7 @@
   }
 
   .view-plans-btn {
-    background-color: #00E5FF; /* Electric teal */
+    background-color: #FFC107; /*Bright Amber */
     color: #000; /* Dark text for contrast */
     padding: 14px 28px;
     font-size: 1.1rem;
@@ -90,12 +90,14 @@
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-
-  .view-plans-btn:hover {
     box-shadow: 0 0 15px rgba(255, 193, 7, 0.8),
                 0 0 30px rgba(255, 193, 7, 0.6),
                 0 0 45px rgba(255, 193, 7, 0.4);
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Ensures text-decoration works consistently */
+  }
+
+  .view-plans-btn:hover {
     transform: scale(1.05);
   }
 
