@@ -497,10 +497,9 @@
       z-index: 1000;
     }
 
-/* Active state - menu slides in */
-nav ul.active {
-  right: 0;
-}
+    /* Active state - menu slides in */
+    nav ul.active {
+      right: 0;
     }
   
     nav ul.active {
@@ -523,6 +522,19 @@ nav ul.active {
       color: #64ffda;
       padding: 7px;
     }
+
+   .nav-links {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    }
+
+   .nav-links.active {
+      opacity: 1;
+      max-height: 500px;
+    }
+
   }
   .plans-section {
     padding: 50px 50px;
