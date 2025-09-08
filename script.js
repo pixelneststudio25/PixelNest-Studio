@@ -95,3 +95,27 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     navMenu.classList.remove('active');
   });
 });
+
+// ===== Mobile Menu Toggle =====
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+// Toggle menu on hamburger click
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+
+  // Change hamburger ☰ into X ✖
+  if (menuToggle.innerHTML === "☰") {
+    menuToggle.innerHTML = "&times;"; // ✖
+  } else {
+    menuToggle.innerHTML = "&#9776;"; // ☰
+  }
+});
+
+// Close menu automatically when a link is clicked
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuToggle.innerHTML = "&#9776;"; // Reset back to ☰
+  });
+});
