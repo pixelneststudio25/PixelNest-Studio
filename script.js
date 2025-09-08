@@ -67,26 +67,22 @@ const observer = new IntersectionObserver(entries => {
 });
 observer.observe(heroImg);
 
-// ===== Mobile Menu Toggle =====
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+// ========================
+// Hamburger Toggle + Close
+// ========================
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
 
-// Toggle menu on hamburger click
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-
-  // Change hamburger ☰ into X ✖
-  if (menuToggle.innerHTML === "☰") {
-    menuToggle.innerHTML = "&times;"; // ✖
-  } else {
-    menuToggle.innerHTML = "&#9776;"; // ☰
-  }
+// Toggle menu + X animation
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active'); // hamburger → X
+  navMenu.classList.toggle('active');   // show/hide menu
 });
 
-// Close menu automatically when a link is clicked
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-    menuToggle.innerHTML = "&#9776;"; // Reset back to ☰
+// Auto-close menu when a link is clicked
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
   });
 });
