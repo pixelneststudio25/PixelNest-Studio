@@ -57,15 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
   elements.forEach(el => observer.observe(el));
 });
 
-const heroImg = document.querySelector(".hero-image");
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add("show");
-    }
-  });
-});
-observer.observe(heroImg);
 
 // ========================
 // Hamburger Toggle + Close
