@@ -160,10 +160,10 @@ nav ul li a:hover {
 }
 
 .view-plans-btn {
-  background: linear-gradient(135deg, #FFB300, #E6A500);
-  color: white;
-  font-weight: 300; /* FIX: was 300px */
-  letter-spacing: 0.9px;
+  background: #00dcdc;
+  color: #050c17;
+  font-weight: 500;
+  letter-spacing: 1.0px;
   padding: 14px 28px;
   border: none;
   border-radius: 6px;
@@ -171,12 +171,14 @@ nav ul li a:hover {
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
-  box-shadow: 0 0 12px rgba(255, 179, 0, 0.6),
-              0 0 24px rgba(230, 165, 0, 0.4);
+  box-shadow: 0 0 12px rgba(0, 220, 220, 0.6),
+              0 0 24px rgba(0, 220, 220, 0.4);
 }
 
 .view-plans-btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(0, 220, 220, 0.8),
+              0 0 36px rgba(0, 220, 220, 0.6);
 }
 
 .video-background {
