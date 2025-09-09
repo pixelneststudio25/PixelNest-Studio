@@ -70,8 +70,9 @@ observer.observe(heroImg);
 // ========================
 // Hamburger Toggle + Close
 // ========================
+
 const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('nav ul');
+const navMenu = document.querySelector('.nav-links');
 
 // Toggle menu + X animation
 hamburger.addEventListener('click', () => {
@@ -79,8 +80,8 @@ hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');   // show/hide menu
 });
 
-// Auto-close menu when a link is clicked
-document.querySelectorAll('nav ul li a').forEach(link => {
+// Auto-close menu when a nav link is clicked
+document.querySelectorAll('.nav-links li a').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
