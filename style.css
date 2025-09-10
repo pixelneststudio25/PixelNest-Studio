@@ -903,3 +903,24 @@ p  { font-size: 1.8rem; line-height: 1.6; }
   font-weight: bold;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+
+@media (max-width: 768px) {
+  .comparison-section {
+    padding: 10px;
+  }
+
+  .pricing-table {
+    max-width: 100%;
+    font-size: 0.9rem; /* shrink text slightly */
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: 8px; /* tighter padding for small screens */
+  }
+
+  .pricing-table th {
+    font-size: 1.1rem; /* smaller header text */
+  }
+}
