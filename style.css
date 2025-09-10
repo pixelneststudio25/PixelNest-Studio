@@ -912,15 +912,15 @@ p  { font-size: 1.8rem; line-height: 1.6; }
 
   .pricing-table {
     max-width: 100%;
-    font-size: 0.9rem; /* shrink text slightly */
+    font-size: 0.7rem; /* shrink text slightly */
   }
 
   .pricing-table th,
   .pricing-table td {
-    padding: 8px; /* tighter padding for small screens */
+    padding: 5px; /* tighter padding for small screens */
   }
 
   .pricing-table th {
-    font-size: 1.1rem; /* smaller header text */
+    font-size: 0.9rem; /* smaller header text */
   }
 }
