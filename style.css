@@ -806,7 +806,9 @@ p  { font-size: 1.8rem; line-height: 1.6; }
   background: #0056b3;
 }
 
-
+/* =========================
+   Comparison Section Styling
+   ========================= */
 .comparison-section {
   margin-top: 80px;
   padding: 40px;
@@ -820,15 +822,20 @@ p  { font-size: 1.8rem; line-height: 1.6; }
   font-size: 2rem;
   margin-bottom: 25px;
   color: #fff;
+  text-align: center;
 }
 
+/* =========================
+   Comparison Table Styling
+   ========================= */
 .pricing-table {
   width: 100%;
-  border-collapse: collapse;
-  margin: 0 auto;
   max-width: 1000px;
-  overflow: hidden;
+  margin: 0 auto;
+  border-collapse: collapse;
   border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .pricing-table th,
@@ -838,107 +845,32 @@ p  { font-size: 1.8rem; line-height: 1.6; }
   text-align: center;
 }
 
+/* Header styling */
 .pricing-table th {
-  background: #0c4949;
+  background: #0c4949; /* branded teal header */
   color: #fff;
   font-size: 1.2em;
+  font-weight: 600;
 }
 
+/* Base table cells */
 .pricing-table td {
   background: #fff;
   color: #333;
 }
 
-.highlight {
-  background: #00dcdc;
-  color: #fff;
-  font-weight: bold;
-  position: relative;
+/* Alternate row shading for readability */
+.pricing-table tbody tr:nth-child(even) td {
+  background: #fafafa;
 }
 
-.badge {
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  background: #ff9800;
-  color: #fff;
-  padding: 4px 8px;
-  font-size: 0.8em;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-.check {
-  color: #00c853;
-  font-weight: bold;
-}
-
-.cross {
-  color: #e53935;
-  font-weight: bold;
-}
-
-/* =========================
-   Comparison Table Styling
-   ========================= */
-.pricing-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.pricing-table th,
-.pricing-table td {
-  border: 1px solid #ddd;
-  padding: 12px;
-}
-
-.pricing-table th {
-  background: #f7f7f7;
-  font-weight: 600;
-}
-
-.pricing-table td.check {
-  color: green;
-  font-weight: bold;
-}
-
-.pricing-table td.cross {
-  color: red;
-  font-weight: bold;
-}
-
-.pricing-table .highlight {
-  background: #f0faff;
-  color: #00bfa6;
-  position: relative;
-}
-
-.pricing-table .badge {
-  display: inline-block;
-  background: #00dcdc;
-  color: #fff;
-  padding: 2px 8px;
-  font-size: 0.8rem;
-  border-radius: 12px;
-  margin-left: 8px;
-}
-
-
-/* Hover effect for rows */
+/* Hover effect */
 .pricing-table tr:hover td {
   background: #f9f9f9;
   transition: background 0.3s ease;
 }
 
-/* Alternate row shading for better readability */
-.pricing-table tbody tr:nth-child(even) td {
-  background: #fafafa;
-}
-
-/* Tick and cross styling */
+/* Checkmark & cross styling */
 .pricing-table td.check {
   color: #00b894;
   font-weight: bold;
@@ -955,6 +887,7 @@ p  { font-size: 1.8rem; line-height: 1.6; }
   background: #00dcdc;
   color: #fff;
   font-weight: bold;
+  position: relative;
 }
 
 /* Smooth badge styling */
