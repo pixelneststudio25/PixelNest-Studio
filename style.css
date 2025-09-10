@@ -805,3 +805,75 @@ p  { font-size: 1.8rem; line-height: 1.6; }
 .about-btn:hover {
   background: #0056b3;
 }
+
+
+.comparison-section {
+  margin-top: 80px;
+  padding: 40px;
+  background: rgba(12, 73, 73, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+.comparison-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+}
+
+.pricing-table th {
+  background: #0c4949;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.pricing-table td {
+  background: #fff;
+  color: #333;
+}
+
+.highlight {
+  background: #00dcdc;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #ff9800;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.check {
+  color: #00c853;
+  font-weight: bold;
+}
+
+.cross {
+  color: #e53935;
+  font-weight: bold;
+}
